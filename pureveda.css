@@ -1,6 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
+   
 }
 .head{
     background-color: #e79822;
@@ -41,7 +42,7 @@ a{
 .pannel1
 {
     height: 70px;
-    background: transparent;
+    background-color:  white;
 }
 #searchbar
 {
@@ -72,6 +73,209 @@ button:hover
 {
   background-color: #3949ab;
 }
+#user-icon-container {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center items vertically */
+    cursor: pointer;
+}
 
+#user-icon-container a {
+    display: none; /* Hide links initially */
+}
 
-     
+/* hero section */
+body{
+    /* background-image: url('pic5.jpg');
+    background-position: center;
+    background-size: cover; */
+    background-color: #00693E;
+}
+
+.hero-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin:  50px 200px 50px 200PX;
+}
+
+.slides {
+   
+    display: flex;
+    
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+}
+
+.slide h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 5px;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* grid section */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 80%;
+    margin-left: 65px;
+}
+
+.grid-item {
+    background-color:rgb(255, 238, 246) ;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    background-image: url(''); /* Add this line to set the background image */
+    background-size: cover; /* Ensure the image covers the entire box */
+    background-position: center; /* Center the image within the box */
+}
+
+.grid-item h2 {
+    /* margin: 0 0 10px;
+    font-size: 18px; */
+    /*background-color: rgba(250, 248, 248, 0.8);  Add a semi-transparent background to the heading */
+    display: flex;
+    /* padding: 5px; */
+}
+.grid-item h1{
+    display: flex;
+
+}
+
+.grid-item div{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.grid-item img {
+    /* width: 100%; */
+    height: 300px;
+    border-radius: 5px;
+    background-color: rgba(248, 245, 245, 0.8); /* Add a semi-transparent background to the image */
+    display: inline-block;
+    padding: 5px;
+}
+/* cart */
+.cart-icon {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.product img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+
+#cart-items-container .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#cart-items-container .cart-item img {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#cart-items-container .cart-item div {
+    flex-grow: 1;
+}
+
+/* footer */
+.footer{
+    margin-top : 20px ;
+    color: #FFE8C8;
+  
+}
+.footer1{
+    height:20px ;
+    /* width:1250px ; */
+    background-color: rgb(58, 58, 58);
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+    padding: 15px;
+}
+.footer2{
+    height: 250px;
+    /* width: 1250px; */
+    background-color: #261f1f;
+    color: white;
+   
+    display: flex;
+    justify-content: space-evenly;
+   padding: 20px;
+   
+}
